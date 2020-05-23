@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+%\usepackage[latin1]{inputenc}  
+\usepackage{xcolor}
+\usepackage{cleveref}
+\usepackage{listings}
+%\usepackage{listings-golang} % import this package after listings
+
+% ADD SUBSUBSUBSECTION
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+%\lstset{ % add your own preferences
+%    frame=single,
+%    basicstyle=\footnotesize,
+%    keywordstyle=\color{red},
+%    numbers=left,
+%    numbersep=5pt,
+%    showstringspaces=false, 
+%    stringstyle=\color{blue},
+%    tabsize=4,
+%    language=Golang % this is it !
+%}
+     
+\sloppy
+
+\title{Árion: A Blockchain Framework for Traceability in\\ Supply Chain Management}
+
+\author{Edivaldo M. F. J. Júnior\inst{1}, Manoel C. M. Neto\inst{1}, Allan E. S. Freitas\inst{1}}
+
+
+\address{Programa de Pós-Graduação em Engenharia de Sistemas e Produtos\\ Instituto Federal da Bahia (IFBA)\\ Campus de Salvador, 40301-015, Salvador -- BA -- Brazil
+  \email{\{edivaldojunior,manoelnetom,allan\}@ifba.edu.br}
+}
+
+\begin{document} 
+
+\maketitle
+
+\input{abstract}
+
+\input{sections/1_INTRODUCTION.tex}
+\input{sections/2_THEORETICAL_BACKGROUND.tex}  
+\input{sections/3_GENERAL_CONTEXT.tex}
+\input{sections/4_RELATED_WORK.tex}
+\input{sections/5_PROPOSED_FRAMEWORK.tex}
+\input{sections/6_IMPLEMENTATION.tex}
+\input{sections/7_CONCLUSION.tex}
+
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\end{document}
